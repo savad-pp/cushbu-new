@@ -1,0 +1,19 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card p-2 m-2">
+        <h3 class="pb-2 border-bottom"><strong>Login Here</strong></h3>
+        <div class="alert alert-danger" role="alert" *ngIf="validationDiv">
+          {{error}}
+        </div>
+        <form  #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="d-flex flex-column">
+        <input class="form-control form-control-sm my-1" type="text" name="email" id="" placeholder="Email" ngModel>
+        <input class="form-control form-control-sm" type="password" name="password" id="" placeholder="password" ngModel>
+        <button class="btn btn-danger my-2" type="submit">Login</button>
+        <span><a href="">Forgot Password?</a></span>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

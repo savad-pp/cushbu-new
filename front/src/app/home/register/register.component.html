@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card p-2 m-2">
+        <h3 class="pb-2 border-bottom mb-2"><strong>Register here</strong></h3>
+        
+        <div class="alert alert-danger" role="alert" *ngIf="!validationDiv">
+         {{status}}
+        </div>
+        
+        <form #registerForm="ngForm" (ngSubmit)="register(registerForm)" class="d-flex flex-column">
+        <input class="form-control form-control-sm my-1" type="text" name="name" id="" placeholder="name" ngModel required>
+        <input class="form-control form-control-sm my-1" type="text" name="email" id="" placeholder="email" ngModel required>
+        <input class="form-control form-control-sm my-1" type="text" name="password" id="" placeholder="password" ngModel required (keyup)="getpass($event)">
+        <input class="form-control form-control-sm my-1" type="text" name="confirmpassword" id="" placeholder="confirm password" ngModel required (keyup)="getpasscon($event)">
+        <input class="form-control form-control-sm my-1" type="text" name="refferedby" id="" placeholder="refferad by" ngModel>
+        <button class="btn btn-danger my-2" [disabled]="flag">Register</button>
+      </form> 
+      </div>
+    </div>
+  </div>
+</div>

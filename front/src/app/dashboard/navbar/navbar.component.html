@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card box">
+          <div class="p-2 text-center pb-3 border-bottom">
+            <h3><strong>Dashboard of {{user}}</strong></h3>
+          </div>
+          <div class="bg-ul" id="navbar">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2"><span><i class="fas fa-home mr-2"></i></span>DASHBOARD</li>
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2"><span><i class="fas fa-wallet mr-2"></i></span>WALLET</li>
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2"><span><i class="fas fa-receipt mr-2"></i></span>REPORTS</li>
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2"><span><i class="fas fa-chart-pie mr-2"></i></span>STATICS</li>
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2"><span><i class="fas fa-cogs mr-2"></i></span>SETTINGS</li>
+              <li class="nav-item py-2 d-flex align-items-center ml-4 pl-2" (click)="logout()"><span><i class="fas fa-power-off mr-2"></i></span>LOGOUT</li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
